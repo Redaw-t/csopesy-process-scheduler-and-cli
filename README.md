@@ -14,6 +14,18 @@ a `screen`-style process multiplexer, and CPU utilization reports.
 
 **`src/main.cpp`** contains `main()`, which starts the console (`src/console/Console.cpp`).
 
+## Documentation
+
+| Document | Contents |
+|----------|----------|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Team workflow, code style, threading rules, how to add commands and tests |
+| [docs/technical-report/summary.md](docs/technical-report/summary.md) | Technical report summary: the condensed slide content |
+| [docs/technical-report/01-command-recognition.md](docs/technical-report/01-command-recognition.md) | Detailed: command recognition |
+| [docs/technical-report/02-console-ui-implementation.md](docs/technical-report/02-console-ui-implementation.md) | Detailed: console UI implementation |
+| [docs/technical-report/03-command-interpreter-implementation.md](docs/technical-report/03-command-interpreter-implementation.md) | Detailed: command interpreter implementation |
+| [docs/technical-report/04-process-representation.md](docs/technical-report/04-process-representation.md) | Detailed: process representation |
+| [docs/technical-report/05-scheduler-implementation.md](docs/technical-report/05-scheduler-implementation.md) | Detailed: scheduler implementation |
+
 ---
 
 ## Quick Start
@@ -233,6 +245,12 @@ so thousands of waiting processes use very little memory.
 m01/
 ├── CMakeLists.txt
 ├── config.txt
+├── README.md
+├── CONTRIBUTING.md               Workflow, code style, threading rules
+├── docs/
+│   └── technical-report/         Technical report
+│       ├── summary.md            Condensed slide content
+│       └── 01-…05-*.md           Detailed write-up of each section
 ├── src/
 │   ├── main.cpp                  Entry point
 │   ├── config/                   config.txt parsing and validation
